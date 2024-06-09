@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty</title>
+  
+  <style>
+    body
+    {
+        background-color: #cdd8f5;
+    }
+  .button-container 
+    {
+        position: fixed;
+        left: 60px; 
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left:450px ;
+      }
+      
+      .custom-button {
+        width: 250px;
+        height: 50px;
+        background-color: #1742B4;
+        border: none;
+        color: white;
+        padding: 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
+        font-family: "Helvetica", Sans-Serif;
+      }
+      
+      .custom-button:hover {
+        background-color: rgb(11, 11, 82)
+      }  </style>
+</head>
+<body>
+<div class="button-container" >
+  <button class="custom-button"onclick="openattendence()">Attendance Upload</button>
+  <button class="custom-button" onclick="openreports()">Reports Upload</button>
+  <button class="custom-button" onclick="opensubjects()">Subject Resources Upload</button>
+  <button class="custom-button" onclick="openmeets()">Schedule Meetings</button>
+</div>
+<h1 style="text-align: center;">Welcome Faculty!</h1>
+<script>
+function openattendence(){
+  window.open(' facuty atten.html');
+
+}
+function openreports(){
+  window.open('faculty stu rec.html');
+
+}
+function opensubjects(){
+  window.open('sujects.html');
+
+}
+function openmeets(){
+  window.open('faculty meets.html');
+
+}
+
+</script>
+
+</body>
+</html>

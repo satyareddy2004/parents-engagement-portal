@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('WhatsApp Image.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+   /* Ensure full viewport height */
+} 
+.container {
+    display: flex; /* Use flexbox layout */
+    height: 100vh; /* Full height of the viewport */
+  }
+  .container > div {
+    flex: 1; /* Each flex item will take up an equal amount of space */
+    border: 1px solid #000; /* Adds a border to each container */
+    padding: 20px; /* Adds some padding inside the containers */
+  }
+  img{
+    left: 0%;
+  }
+  nav{
+    justify-content: center;
+    text-align: right;
+    padding-top: 5%;
+    padding-left: 8%;
+    font-size: 25px;
+    
+}
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item a {
+  display:flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  background-color: #575757;
+}
+
+.section {
+  padding: 20px;
+  display: none; /* Hidden by default */
+}
+
+.section.active {
+  display: block; /* Show active section */
+}
+.button-container 
+{
+    position: fixed;
+    left: 250px; 
+    top: 55%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .custom-button {
+    background-color: #1742B4;
+    width: 250px;
+    height: 50px;
+    border: none;
+    color: white;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    font-family: "Courier New", monospace;
+  }
+  
+  .custom-button:hover {
+    background-color: rgb(11, 11, 82)
+  }  
+  h1{
+    padding-top: 180px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  h4{
+    text-align: center;
+    font-size: 25px;
+    padding-left: 200px;
+    color: white;
+    font-style: oblique;
+  }

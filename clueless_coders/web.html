@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="web.css">
+</head>
+<body>
+<div class="container">
+    <div style="background-color: rgb(255, 255, 255, 0.7);">
+    <img src ="logo.png">
+        <div class="button-container">
+            <button onclick="openFirstPage()" class="custom-button" >Student Login</button>
+            <button onclick="openSecondPage()" class="custom-button">Parent Login</button>
+            <button onclick="openThirdPage()" class="custom-button">Faculty Login</button>
+        </div>     
+    </div>
+    <div style="background-color: rgb(23, 66, 180, 0.7)">
+        <div>
+        <nav class="right">
+            <ul class="nav-list">
+            <li class="nav-item"><a href="home.html" onclick="showSection('home')" style ="color:white;" size="50"> HOME</fontcolor></a> </li>
+         &nbsp;&nbsp; &nbsp;&nbsp;  
+         <li class="nav-item"><a href="update.html" onclick="showSection('updates')" style ="color:white;"size="8"> UPDATES</fontcolor></a> </li>
+         &nbsp;&nbsp; &nbsp;&nbsp;
+         <li class="nav-item"><a href="faq.html" onclick="showSection('faqs')" style ="color:white;" size="12"> FAQs</fontcolor></a> </li>
+         &nbsp;&nbsp; &nbsp;&nbsp;
+         <li class="nav-item"><a href="contact.html" onclick="showSection('contact')" style ="color:white;" size="6">CONTACT</fontcolor></a></li> 
+        </ul>
+        </nav>
+        </div>
+        <div class="quote">
+            <h1>Beyond Boundaries</h1>
+            <h4>"Where Intelligence meets Achivement"</h4>
+    </div>
+</div>
+<script>
+    // Function to open the first HTML page
+    function openFirstPage() {
+      window.open('login.html', '_blank');
+    }
+    
+    // Function to open the second HTML page
+    function openSecondPage() {
+      window.open('login1.html', '_blank');
+    }
+    
+    // Function to open the third HTML page
+    function openThirdPage() {
+      window.open('login2.html', '_blank');
+    }
+    </script>
+    
+    
+</body>
+</html>

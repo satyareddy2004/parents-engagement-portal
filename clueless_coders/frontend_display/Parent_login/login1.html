@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body 
+        {
+    
+        margin: 0;
+        padding: 0;
+        background-image: url('login.jpg');
+        background-size: cover;
+        background-position: center;
+        font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            padding: 15px;
+            border: 1px solid #1742B4;
+            border-radius: 5px;
+         }
+         input{
+            margin: 5px 0px;
+            height: 35px;
+            padding: 7px;
+         }
+         button{
+            height: 35px;
+            margin: 5px 0px;
+            background-color: #1742B4;
+            border: none;
+            border-radius: 5px;
+            color:#333;
+         }
+         button:hover{
+            background-color: #333;
+            color: skyblue;
+
+         }
+        
+
+    </style>
+</head>
+<body><form></form>
+    <div class="container">
+        <form id = "loginForm"></form>
+        <input type="E-mail" id="E-mail" placeholder="E-mail">
+        <input type="Password" id = "password" placeholder="Password">
+        <button type="Login" onclick="Openloginpage()"> <span style="color: white;">Login</span></button>
+    </form>
+    </div>
+    <script>
+        function Openloginpage(){
+          window.open('parent.html')  
+        }
+    </script>
+    
+
+    
+</body>
+</html>
+
